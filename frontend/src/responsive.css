@@ -1,0 +1,131 @@
+.account-nav .header-report {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 33px;
+  padding: 0 10px;
+  border: 1px solid #d5e2d9;
+  border-radius: 3px;
+  background: #eff5f0;
+  color: #326b55;
+  font-size: 10px;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.filter-panel {
+  grid-template-columns: minmax(170px, 1.3fr) repeat(3, minmax(120px, 1fr)) auto;
+}
+
+.admin-filters {
+  grid-template-columns: minmax(170px, 1.3fr) repeat(3, minmax(120px, 1fr));
+  margin-bottom: 12px;
+}
+
+.admin-stats {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.admin-breakdowns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 13px;
+}
+
+.breakdown-card {
+  padding: 15px 17px;
+  border: 1px solid #e0e8e3;
+  background: #fff;
+}
+
+.breakdown-card h3 {
+  margin: 0 0 10px;
+  font-size: 11px;
+}
+
+.breakdown-card ul {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breakdown-card li {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #78867e;
+  font-size: 9px;
+}
+
+.breakdown-card li b {
+  color: #416b57;
+}
+
+.breakdown-card p {
+  margin: 0;
+  color: #87938d;
+  font-size: 9px;
+}
+
+.account-nav .header-report:hover {
+  background: #e5efe7;
+}
+
+.account-nav .header-report span {
+  font-size: 14px;
+}
+
+.site-footer .osm-credit {
+  color: #6d8578;
+  font-size: 9px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-footer .osm-credit:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 620px) {
+  .admin-breakdowns {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .filter-panel,
+  .admin-filters {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .filter-panel label:first-child,
+  .admin-filters label:first-child {
+    grid-column: span 2;
+  }
+
+  .filter-panel .result-count {
+    grid-column: span 2;
+    justify-self: end;
+  }
+
+  .account-nav {
+    gap: 6px;
+  }
+
+  .account-nav .header-report {
+    width: 30px;
+    min-height: 30px;
+    justify-content: center;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .site-footer .osm-credit {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,29 @@
+# Frontend
+node_modules/
+**/node_modules/
+.pnpm-store/
+pnpm-debug.log*
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+
+# Backend
+backend/target/
+target/
+backend/uploads/
+uploads/
+*.class
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+application-local.properties
+
+# IDEs and operating systems
+.idea/
+.vscode/
+.vs/
+*.iml
+.DS_Store
+Thumbs.db
